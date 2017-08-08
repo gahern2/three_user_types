@@ -1,6 +1,6 @@
 class AdvocatesController < ApplicationController
   def index
-    @advocates = Advocate.all
+    @advocates = Advocate.page(params[:page]).per(10)
   end
 
   def show
