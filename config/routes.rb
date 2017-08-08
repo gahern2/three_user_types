@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "customers#index"
   devise_for :developers
   # Routes for the Developer resource:
   # READ
