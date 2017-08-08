@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :advocates
+  # Routes for the Advocate resource:
+  # READ
+  get "/advocates", :controller => "advocates", :action => "index"
+  get "/advocates/:id", :controller => "advocates", :action => "show"
+
+
   devise_for :customers
   # Routes for the Customer resource:
   # READ
