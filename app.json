@@ -1,0 +1,1 @@
+{"name":"Three User Types","repository":"https://github.com/gahern2/three_user_types","env":{"CLOUDINARY_CLOUD_NAME":{"required":true},"CLOUDINARY_API_KEY":{"required":true},"CLOUDINARY_API_SECRET":{"required":true},"ROLLBAR_ACCESS_TOKEN":{"required":true}}}
