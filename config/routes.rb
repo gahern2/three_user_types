@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :developers
+  # Routes for the Developer resource:
+  # READ
+  get "/developers", :controller => "developers", :action => "index"
+  get "/developers/:id", :controller => "developers", :action => "show"
+
+
   devise_for :advocates
   # Routes for the Advocate resource:
   # READ
